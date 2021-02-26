@@ -1,0 +1,35 @@
+
+interface Interface{ 
+	
+  void method1();
+  void method2();
+  void method3();
+  
+}  
+abstract class B implements Interface{
+	public void method2() {
+		System.out.println("This is method 2");
+	}
+}
+
+class D extends B{
+	public void method1() {
+		System.out.println("This is method 1");
+	}
+	public void method3() {
+		System.out.println("This is method 3");
+	}
+}
+class demo {   
+  
+	 public static void main(String args[]){  
+		 
+		  D object=new D();
+		  
+		  object.method1(); 
+		  object.method2();
+		  object.method3();
+	  
+	 }  
+}  
+

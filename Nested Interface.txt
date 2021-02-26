@@ -1,0 +1,29 @@
+
+interface Interface1{ 
+	
+  interface Interface2{  
+	  
+	  void method();
+	  
+  }  
+  
+}  
+
+class demo implements Interface1.Interface2{  
+	
+	 public void method(){
+		 
+		 System.out.println();
+		 System.out.print("This is Interface2, the nested one!!");
+		 
+	 }  
+  
+	 public static void main(String args[]){  
+		 
+		  demo object=new demo();
+		  
+		  object.method();  
+	  
+	 }  
+}  
+

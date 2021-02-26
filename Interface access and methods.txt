@@ -1,0 +1,55 @@
+  *************First Program****************
+
+interface myInterface{
+    void display();
+    static double circleArea(int r) {
+    	double A=Math.PI*r*r;
+    	return A;
+    }
+    default int rectArea(int l,int b) {
+    	int B=l*b;
+    	return B;
+    }
+}
+class Cl implements myInterface{
+	public void display() {
+		System.out.println("Hello World!");
+	}
+}
+
+public class gen{
+    public static void main(String args[]){
+        Cl c=new Cl();
+        c.display();
+        System.out.println(myInterface.circleArea(3));
+        System.out.print(c.rectArea(3,4));
+    }
+}
+
+
+******************Second Program*******************
+
+
+interface I{
+   void a();
+   void b();
+}
+
+class C implements I{
+	public void a(){
+		System.out.println("This is 1");
+	}
+	
+	public void b(){
+		System.out.println("This is 2");
+	}
+}
+public class demo {
+		
+		public static void main(String arg[]){
+			C o = new C();
+			o.a();
+			o.b();
+		}
+
+}
