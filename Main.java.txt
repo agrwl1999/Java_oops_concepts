@@ -1,0 +1,13 @@
+
+import demo.demo;
+import demo2.hi;
+public class Main {
+
+	public static void main(String[] args) {
+		
+			demo.add(1, 1);
+			hi.sum(10, 10,10);
+	}
+
+}
+
