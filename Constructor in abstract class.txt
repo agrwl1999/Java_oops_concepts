@@ -1,0 +1,23 @@
+ 
+abstract class B {
+	B(){
+		System.out.println("Default Constructor: ");
+	}
+	B(boolean n){
+		System.out.println("Parameterized Constructor: "+n);
+	}
+}
+
+class D extends B{
+	D(){
+		super(true);
+	}
+}
+class demo {   
+  
+	 public static void main(String args[]){  
+		 
+		  D object=new D();
+	 }  
+}  
+
